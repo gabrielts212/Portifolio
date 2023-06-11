@@ -1,7 +1,7 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import "../styles/globals.css";
-// import "@fontsource/poppins";
-// import "@fontsource/bai-jamjuree"
+import "@fontsource/poppins";
+// import "@fontsource/bai-jamjuree";
 
 function App({ Component, pageProps }) {
   return (
