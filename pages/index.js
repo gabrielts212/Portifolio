@@ -10,10 +10,10 @@ import Body from '@/src/components/Body/Body';
 export default function Home() {
   return (
     <div>
-     <Header/>
+     {/* <Header/> */}
       {/* <BodyProject/> */}
       <Body/>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   )
 }
