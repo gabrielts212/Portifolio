@@ -1,8 +1,20 @@
-import React from 'react'
+
+import {
+  Flex,
+  Text,
+  Heading,
+  Box,
+  List,
+  ListItem,
+  UnorderedList,
+  DrawerHeader,
+  SimpleGrid,
+  Divider,
+} from "@chakra-ui/react";
 
 const BodyProject = () => {
   return (
-    <div>BodyProject</div>
+    <Flex>BodyProject</Flex>
   )
 }
 
