@@ -12,34 +12,29 @@ import {
   Divider,
 } from "@chakra-ui/react";
 import Image from "next/image";
-import Instagram from "../assets/images/Instagram.png";
+// import Instagram from "../assets/images/Instagram.png";
+import Road from "../assets/images/road.jpg"
+import Cathedral from "../assets/images/cathedral.jpg"
+import Bridge from "../assets/images/Bridge.jpg"
+import European from "../assets/images/european.jpg"
+
 const icons = [
   {
-    icon: Instagram,
+    icon: European,
     alt: "Instagram",
   },
   {
-    icon: Instagram,
+    icon: Cathedral,
     alt: "Instagram",
   },
   {
-    icon: Instagram,
+    icon: Road,
     alt: "Instagram",
   },
   {
-    icon: Instagram,
+    icon: Bridge,
     alt: "Instagram",
   },
-
-  // {
-  //   icon: Linkedin,
-  //   alt: "Linkedin",
-  // },
-
-  // {
-  //   icon: Facebook,
-  //   alt: "Facebook",
-  // },
 ];
 
 const newsList = [
@@ -56,15 +51,13 @@ const newsList = [
 
 const Body = () => {
   return (
-    <Flex w="100%" h="100%" >
-
- 
-        <Flex flexDir="column"align="center" >
+    <Flex w="100%" h="100%"  >
+        <Flex flexDir="column"align="center"h="50%">
           {newsList.map((news, index) => {
             return (
 
-              <Flex flexDir="column" {...news} key={index}   w="80%" >
-                <Flex flexDir="column" align="center">
+              <Flex flexDir="column" {...news} key={index}   w="80%" pb="50" >
+                <Flex flexDir="column" align="center" pb="5"pt="10">
                   <Heading
                     size="xs"
                     fontFamily="Roboto"
@@ -82,48 +75,29 @@ const Body = () => {
                     {news.content}
                   </Text>
                 </Flex>
+
+
+
+
               </Flex>
             );
           })}
 
-          <Flex
-            justifyContent="center"
-            bg="brown"
-            w="100%"
-            h="100px"
-            align="center"
-          
-          >
-            <Flex justify="space-between"   gap="2">
+<Flex     >
+            <Flex gap="40"  pb="60">
               {icons.map((icon, index) => {
                 return (
-                  <Text {...icon} key={index} cursor="pointer">
-                    <Image src={icon.icon} alt={icon.alt} />
+                  <Text {...icon} key={index} cursor="pointer"  height="260px" w="260px" >
+                    <Image src={icon.icon} alt={icon.alt}   />
                   </Text>
                 );
               })}
             </Flex>
        
         </Flex>
+
       </Flex>
 
-      {/* <Flex  w="100%" h="100%" bg="brown" >
-
-
-  <SimpleGrid   columns={[1, 2, 4]} pt="10rem" pb="5" >
-    <Box  gap={3.5} display={["none", "none", "none", "flex", "flex"]} >
-          {icons.map((icon, index) => {
-            return (
-              <Text {...icon} key={index}  cursor="pointer">
-                <Image src={icon.icon} alt={icon.alt}/>
-              </Text>
-            );
-          })}
-      
-    </Box>
-  </SimpleGrid>
-
-</Flex> */}
     </Flex>
   );
 };

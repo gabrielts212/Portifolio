@@ -13,7 +13,7 @@ export default function Home() {
      {/* <Header/> */}
       {/* <BodyProject/> */}
       <Body/>
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   )
 }
