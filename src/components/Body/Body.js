@@ -13,10 +13,10 @@ import {
 } from "@chakra-ui/react";
 import Image from "next/image";
 // import Instagram from "../assets/images/Instagram.png";
-import Road from "../assets/images/road.jpg"
-import Cathedral from "../assets/images/cathedral.jpg"
-import Bridge from "../assets/images/Bridge.jpg"
-import European from "../assets/images/european.jpg"
+import Road from "../assets/images/road.jpg";
+import Cathedral from "../assets/images/cathedral.jpg";
+import Bridge from "../assets/images/Bridge.jpg";
+import European from "../assets/images/european.jpg";
 
 const icons = [
   {
@@ -51,53 +51,51 @@ const newsList = [
 
 const Body = () => {
   return (
-    <Flex w="100%" h="100%"  >
-        <Flex flexDir="column"align="center"h="50%">
-          {newsList.map((news, index) => {
-            return (
-
-              <Flex flexDir="column" {...news} key={index}   w="80%" pb="50" >
-                <Flex flexDir="column" align="center" pb="5"pt="10">
-                  <Heading
-                    size="xs"
-                    fontFamily="Roboto"
-                    fontWeight="600"
-                    fontSize="16px"
-                  >
-                    {news.heading}
-                  </Heading>
-                  <Text
-                    pt="2"
-                    fontSize="16px"
-                    fontFamily="Roboto"
-                    fontWeight="400"
-                  >
-                    {news.content}
-                  </Text>
-                </Flex>
-
-
-
-
+    <Flex w="100%" h="100%">
+      <Flex flexDir="column" align="center" h="50%">
+        {newsList.map((news, index) => {
+          return (
+            <Flex flexDir="column" {...news} key={index} w="80%" pb="50">
+              <Flex flexDir="column" align="center" pb="5" pt="10">
+                <Heading
+                  size="xs"
+                  fontFamily="Roboto"
+                  fontWeight="600"
+                  fontSize="16px"
+                >
+                  {news.heading}
+                </Heading>
+                <Text
+                  pt="2"
+                  fontSize="16px"
+                  fontFamily="Roboto"
+                  fontWeight="400"
+                >
+                  {news.content}
+                </Text>
               </Flex>
-            );
-          })}
-
-<Flex     >
-            <Flex gap="40"  pb="60">
-              {icons.map((icon, index) => {
-                return (
-                  <Text {...icon} key={index} cursor="pointer"  height="260px" w="260px" >
-                    <Image src={icon.icon} alt={icon.alt}   />
-                  </Text>
-                );
-              })}
             </Flex>
-       
+          );
+        })}
+
+        <Flex>
+          <Flex gap="40" pb="60">
+            {icons.map((icon, index) => {
+              return (
+                <Text
+                  {...icon}
+                  key={index}
+                  cursor="pointer"
+                  height="260px"
+                  w="260px"
+                >
+                  <Image src={icon.icon} alt={icon.alt} />
+                </Text>
+              );
+            })}
+          </Flex>
         </Flex>
-
       </Flex>
-
     </Flex>
   );
 };
