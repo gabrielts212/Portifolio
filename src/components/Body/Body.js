@@ -51,9 +51,10 @@ const newsList = [
 
 const Body = () => {
   return (
-    <Flex w="100%" h="100%">
+    <Flex w="100%" h="100%" color="#777">
       <Flex flexDir="column" align="center" h="50%">
         {newsList.map((news, index) => {
+          
           return (
             <Flex flexDir="column" {...news} key={index} w="80%" pb="50">
               <Flex flexDir="column" align="center" pb="5" pt="10">
