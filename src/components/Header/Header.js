@@ -26,9 +26,11 @@ const headerTitles = [
 
 const Header = () => {
   return (
+  
+
 
     
-    <Flex bg="#000" w="100%" h="100px" color="#777" position="fixed" >
+    <Flex bg="#000" w="100%" h="100px" color="#777" position="relative" >
       <Flex align="center" gap="10" ml="5" >
         {headerTitles.map((title, index) => {
           return (

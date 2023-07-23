@@ -35,16 +35,16 @@ const icons = [
 
 const Footer = () => {
   return (
-    <Flex w="100%" h="200" bg="#000" justify="center">
+    <Flex w="100%" h="200" bg="#000" justify="center" align="center"  >
       <Flex>
-        <Flex gap={3.5} display={["none", "none", "none", "flex", "flex"]}>
+        <Flex gap={3.5} display={["none", "none", "none", "flex", "flex"]} >
           {icons.map((icon, index) => {
             return (
               <Text {...icon} key={index} cursor="pointer">
                 <Link href="/Header" cursor="pointer">
-                  <Image src={icons} alt="link topo  ↑" />
-                </Link>
+                  {/* <Image src={icons} alt="link topo  ↑" /> */}
                 <Image src={icon.icon} alt={icon.alt} />
+                </Link>
               </Text>
             );
           })}

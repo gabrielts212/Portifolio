@@ -24,14 +24,14 @@ const BodyProject = () => {
        top="25%"
        left="45%"
       //  transform="translate(-50%, -50%)"
-       color="black"
+      //  color="black"
        fontSize="30px"
       //  textAlign="center"
        bg="rgba(0, 0, 0, 0.5)"
        padding="10px"
        
        >
-      MEU PORFOLIO
+      Meu Portifolio
       </Box>
 
       {/* <Flex color=" #ccc "bg="black">MEU PORFOLIO</Flex> */}
