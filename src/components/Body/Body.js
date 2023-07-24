@@ -12,27 +12,27 @@ import {
   Divider,
 } from "@chakra-ui/react";
 import Image from "next/image";
-// import Instagram from "../assets/images/Instagram.png";
-import Road from "../assets/images/road.jpg";
-import Cathedral from "../assets/images/cathedral.jpg";
-import Bridge from "../assets/images/Bridge.jpg";
-import European from "../assets/images/european.jpg";
+import Instagram from "../assets/images/Instagram.png";
+// import Road from "../assets/images/road.jpg";
+// import Cathedral from "../assets/images/cathedral.jpg";
+// import Bridge from "../assets/images/Bridge.jpg";
+// import European from "../assets/images/european.jpg";
 
 const icons = [
   {
-    icon: European,
+    icon: Instagram,
     alt: "Instagram",
   },
   {
-    icon: Cathedral,
+    icon: Instagram,
     alt: "Instagram",
   },
   {
-    icon: Road,
+    icon: Instagram,
     alt: "Instagram",
   },
   {
-    icon: Bridge,
+    icon: Instagram,
     alt: "Instagram",
   },
 ];
