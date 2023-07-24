@@ -12,29 +12,27 @@ import {
   Divider,
 } from "@chakra-ui/react";
 import Image from "next/image";
-import Instagram from "../assets/images/Instagram.png";
+// import Instagram from "../assets/images/Instagram.png";
 // import Road from "../assets/images/road.jpg";
 // import Cathedral from "../assets/images/cathedral.jpg";
 // import Bridge from "../assets/images/Bridge.jpg";
-// import European from "../assets/images/european.jpg";
+import Projeto1 from "../assets/images/projeto1.png";
+import Projeto2 from "../assets/images/projeto2.png";
 
 const icons = [
   {
-    icon: Instagram,
+    icon: Projeto1,
     alt: "Instagram",
   },
   {
-    icon: Instagram,
+    icon: Projeto2,
     alt: "Instagram",
   },
   {
-    icon: Instagram,
+    icon: Projeto2,
     alt: "Instagram",
   },
-  {
-    icon: Instagram,
-    alt: "Instagram",
-  },
+  
 ];
 
 const newsList = [
@@ -87,10 +85,10 @@ const Body = () => {
                   {...icon}
                   key={index}
                   cursor="pointer"
-                  height="260px"
-                  w="260px"
+                  height="460px"
+                  w="460px"
                 >
-                  <Image src={icon.icon} alt={icon.alt} />
+                  <Image   src={icon.icon} alt={icon.alt} />
                 </Text>
               );
             })}
