@@ -12,10 +12,6 @@ import {
   Divider,
 } from "@chakra-ui/react";
 import Image from "next/image";
-// import Instagram from "../assets/images/Instagram.png";
-// import Road from "../assets/images/road.jpg";
-// import Cathedral from "../assets/images/cathedral.jpg";
-// import Bridge from "../assets/images/Bridge.jpg";
 import Projeto1 from "../assets/images/projeto1.png";
 import Projeto2 from "../assets/images/projeto2.png";
 
@@ -32,7 +28,6 @@ const icons = [
     icon: Projeto2,
     alt: "Instagram",
   },
-  
 ];
 
 const newsList = [
@@ -49,10 +44,17 @@ const newsList = [
 
 const Body = () => {
   return (
-    <Flex w="100%" h="100%" color="#777">
+    <Flex
+      w="100%"
+      h="100%"
+      color="#777"
+      bg=" #131516"
+      SimpleGrid
+      minChildWidth="120px"
+      spacing="40px"
+    >
       <Flex flexDir="column" align="center" h="50%">
         {newsList.map((news, index) => {
-          
           return (
             <Flex flexDir="column" {...news} key={index} w="80%" pb="50">
               <Flex flexDir="column" align="center" pb="5" pt="10">
@@ -78,7 +80,7 @@ const Body = () => {
         })}
 
         <Flex>
-          <Flex gap="40" pb="60">
+          <Flex gap="40" pb="10">
             {icons.map((icon, index) => {
               return (
                 <Text
@@ -88,7 +90,7 @@ const Body = () => {
                   height="460px"
                   w="460px"
                 >
-                  <Image   src={icon.icon} alt={icon.alt} />
+                  <Image src={icon.icon} alt={icon.alt} />
                 </Text>
               );
             })}

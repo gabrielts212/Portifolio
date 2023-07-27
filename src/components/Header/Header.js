@@ -26,25 +26,19 @@ const headerTitles = [
 
 const Header = () => {
   return (
-  
-
-
-    
-    <Flex bg="#000" w="100%" h="100px" color="#777" position="relative" >
-      <Flex align="center" gap="10" ml="5" >
+    <Flex bg="#000" w="100%" h="100px" color="#777" position="relative">
+      <Flex align="center" gap="10" ml="5">
         {headerTitles.map((title, index) => {
           return (
             <Flex {...title} key={index}>
-              {/* <Link href="/">
-          <Image src={Logo} alt="Logo" />
-        </Link> */}
               <Text
                 cursor="pointer"
                 _hover={{ bg: "white" }}
                 paddingRight="1rem"
-                fontFamily="Poppins"
                 fontSize="23"
                 gap="10"
+                fontFamily="Roboto"
+                fontWeight="600"
               >
                 {title.title}
               </Text>
