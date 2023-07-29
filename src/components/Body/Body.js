@@ -20,17 +20,17 @@ const icons = [
   {
     icon: Projeto1,
     alt: "Instagram",
-    url: 'https://landing-page-indol-mu.vercel.app/',
+    url: "https://landing-page-indol-mu.vercel.app/",
   },
   {
     icon: Projeto2,
     alt: "Instagram",
-    url: 'https://shoes-lyegkccbt-gabrielts212.vercel.app/',
+    url: "https://shoes-lyegkccbt-gabrielts212.vercel.app/",
   },
   {
     icon: Projeto3,
     alt: "Instagram",
-    url: 'https://lovt-doz1vxtow-gabrielts212.vercel.app/',
+    url: "https://lovt-doz1vxtow-gabrielts212.vercel.app/",
   },
 ];
 
@@ -48,15 +48,7 @@ const newsList = [
 
 const Body = () => {
   return (
-    <Flex
-      w="100%"
-      h="100%"
-      color="#777"
-      bg=" #131516"
-      SimpleGrid
-      minChildWidth="120px"
-      spacing="40px"
-    >
+    <Flex w="100%" h="100%" color="#777" bg=" #131516">
       <Flex flexDir="column" align="center" h="50%">
         {newsList.map((news, index) => {
           return (
@@ -72,7 +64,7 @@ const Body = () => {
                 </Heading>
                 <Text
                   pt="2"
-                  fontSize="16px"
+                  // fontSize="16px"
                   fontFamily="Roboto"
                   fontWeight="400"
                 >
@@ -83,26 +75,22 @@ const Body = () => {
           );
         })}
 
-        <Flex>
-          <Flex gap="40" pb="10">
-            {icons.map((icon, index) => {
-              return (
-                <Text
-                  {...icon}
-                  key={index}
-                  cursor="pointer"
-                  height="460px"
-                  w="460px"
-                >
-                  <a href={icon.url}>
-
+        <SimpleGrid
+          columns={[1, 2, 3]}
+          spacing="100px"
+          justifyContent="space-around"
+          pb="20"
+        >
+          {icons.map((icon, index) => {
+            return (
+              <Box {...icon} key={index} cursor="pointer">
+                <a href={icon.url}>
                   <Image src={icon.icon} alt={icon.alt} />
-                  </a>
-                </Text>
-              );
-            })}
-          </Flex>
-        </Flex>
+                </a>
+              </Box>
+            );
+          })}
+        </SimpleGrid>
       </Flex>
     </Flex>
   );
