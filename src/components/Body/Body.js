@@ -14,19 +14,23 @@ import {
 import Image from "next/image";
 import Projeto1 from "../assets/images/projeto1.png";
 import Projeto2 from "../assets/images/projeto2.png";
+import Projeto3 from "../assets/images/projeto3.png";
 
 const icons = [
   {
     icon: Projeto1,
     alt: "Instagram",
+    url: 'https://landing-page-indol-mu.vercel.app/',
   },
   {
     icon: Projeto2,
     alt: "Instagram",
+    url: 'https://shoes-lyegkccbt-gabrielts212.vercel.app/',
   },
   {
-    icon: Projeto2,
+    icon: Projeto3,
     alt: "Instagram",
+    url: 'https://lovt-doz1vxtow-gabrielts212.vercel.app/',
   },
 ];
 
@@ -90,7 +94,10 @@ const Body = () => {
                   height="460px"
                   w="460px"
                 >
+                  <a href={icon.url}>
+
                   <Image src={icon.icon} alt={icon.alt} />
+                  </a>
                 </Text>
               );
             })}

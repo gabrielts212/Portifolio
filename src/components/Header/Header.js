@@ -10,17 +10,21 @@ import {
   DrawerHeader,
   SimpleGrid,
   Divider,
+  Link,
 } from "@chakra-ui/react";
 
 const headerTitles = [
   {
     title: "Home",
+    url: '/',
   },
   {
     title: "Sobre",
+    url: '/about',
   },
   {
     title: "Portifolio",
+    url: '/',
   },
 ];
 
@@ -40,7 +44,10 @@ const Header = () => {
                 fontFamily="Roboto"
                 fontWeight="600"
               >
+                <a href={title.url}>
+                
                 {title.title}
+                </a>
               </Text>
             </Flex>
           );

@@ -21,20 +21,24 @@ const icons = [
   {
     icon: Instagram,
     alt: "Instagram",
+    url: '/about',
   },
 
   {
     icon: Linkedin,
     alt: "Linkedin",
+    url: '/',
   },
 
   {
     icon: Facebook,
     alt: "Facebook",
+    url: '/',
   },
   {
     icon: Seta,
     alt: "Link Topo",
+    url: '/',
   },
 ];
 
@@ -46,9 +50,9 @@ const Footer = () => {
           {icons.map((icon, index) => {
             return (
               <Text {...icon} key={index} cursor="pointer">
-                <Link href="/" cursor="pointer">
-                  <Image src={icon.icon} alt={icon.alt} />
-                </Link>
+                <a href={icon.url} cursor="pointer">
+                  <Image src={icon.icon} alt={icon.alt}  />
+                </a>
               </Text>
             );
           })}

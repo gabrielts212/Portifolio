@@ -8,13 +8,23 @@ import Footer from "@/src/components/Footer/Footer";
 import Body from "@/src/components/Body/Body";
 import BodyProject from "@/src/components/BodyProject/BodyProject";
 
+// import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+// import Home from './Home';
+// import About from './about';
+// import Navigation from './../src/components/Navigation';
+
 export default function Home() {
   return (
-    <div>
+    // <Router>
+    // <Navigation />
+    // <Switch>
+      <div>
       <Header/>
       <BodyProject/>
       <Body />
       <Footer/>
-    </div>
+      </div>
+
+    
   );
 }
