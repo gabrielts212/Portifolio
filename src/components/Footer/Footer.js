@@ -40,15 +40,14 @@ const icons = [
 
 const Footer = () => {
   return (
-    <Flex w="100%" h="200" bg="#000" justify="center" align="center"  >
+    <Flex w="100%" h="200" bg="#000" justify="center" align="center">
       <Flex>
-        <Flex gap={3.5} display={["flex", "flex", "flex", "flex", "flex"]} >
+        <Flex gap={3.5} display={["flex", "flex", "flex", "flex", "flex"]}>
           {icons.map((icon, index) => {
             return (
               <Text {...icon} key={index} cursor="pointer">
                 <Link href="/" cursor="pointer">
-           
-                <Image src={icon.icon} alt={icon.alt} />
+                  <Image src={icon.icon} alt={icon.alt} />
                 </Link>
               </Text>
             );
