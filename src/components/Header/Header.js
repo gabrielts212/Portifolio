@@ -16,15 +16,15 @@ import {
 const headerTitles = [
   {
     title: "Home",
-    url: '/',
+    url: "/",
   },
   {
     title: "Sobre",
-    url: '/about',
+    url: "/about",
   },
   {
     title: "Portifolio",
-    url: '/',
+    url: "/",
   },
 ];
 
@@ -44,10 +44,7 @@ const Header = () => {
                 fontFamily="Roboto"
                 fontWeight="600"
               >
-                <a href={title.url}>
-                
-                {title.title}
-                </a>
+                <a href={title.url}>{title.title}</a>
               </Text>
             </Flex>
           );
