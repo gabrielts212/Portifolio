@@ -24,18 +24,19 @@ const headerTitles = [
   },
   {
     title: "Portifolio",
-    url: "/",
+    url: "/#Portifolio",
   },
 ];
 
 const Header = () => {
   return (
-    <Flex bg="#000" w="100%" h="100px" color="#777" position="relative">
+    <Flex bg="#000" w="100%" h="80px" color="#777" position="relative" as="h2" id="Header">
       <Flex align="center" gap="10" ml="5">
         {headerTitles.map((title, index) => {
           return (
-            <Flex {...title} key={index}>
+            <Flex {...title} key={index} >
               <Text
+               
                 cursor="pointer"
                 _hover={{ bg: "white" }}
                 paddingRight="1rem"

@@ -4,12 +4,9 @@ import {
   Text,
   Heading,
   Box,
-  List,
-  ListItem,
-  UnorderedList,
-  DrawerHeader,
+
   SimpleGrid,
-  Divider,
+
 } from "@chakra-ui/react";
 import Image from "next/image";
 import Projeto1 from "../assets/images/projeto1.png";
@@ -55,6 +52,7 @@ const Body = () => {
             <Flex flexDir="column" {...news} key={index} w="80%" pb="50">
               <Flex flexDir="column" align="center" pb="5" pt="10">
                 <Heading
+                 as="h2" id="Portifolio"
                   size="xs"
                   fontFamily="Roboto"
                   fontWeight="600"

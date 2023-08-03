@@ -21,7 +21,7 @@ const icons = [
   {
     icon: Instagram,
     alt: "Instagram",
-    url: "/about",
+    url: "/",
   },
 
   {
@@ -38,7 +38,7 @@ const icons = [
   {
     icon: Seta,
     alt: "Link Topo",
-    url: "/",
+    url: "/#Header",
   },
 ];
 
