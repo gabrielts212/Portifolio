@@ -4,7 +4,7 @@ import {
   Text,
   Heading,
   Box,
-
+Link,
   SimpleGrid,
 
 } from "@chakra-ui/react";
@@ -82,9 +82,9 @@ const Body = () => {
           {icons.map((icon, index) => {
             return (
               <Box {...icon} key={index} cursor="pointer">
-                <a href={icon.url}>
+                <Link href={icon.url}  target="_blank" rel="noopener noreferrer">
                   <Image src={icon.icon} alt={icon.alt} />
-                </a>
+                </Link>
               </Box>
             );
           })}
