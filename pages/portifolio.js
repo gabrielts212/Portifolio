@@ -2,7 +2,7 @@ import React from 'react'
 
 const portifolio = () => {
   return (
-    <div>portifolio</div>
+    <div>PARA QUANDO TIVER MAIS DE 10 PROJETOS</div>
   )
 }
 

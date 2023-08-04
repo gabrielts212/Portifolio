@@ -13,13 +13,10 @@ const headerTitles = [
     title: "Sobre",
     url: "/about",
   },
-  {
-    title: "Portifolio",
-    url: "/#Portifolio",
-  },
+  
 ];
 
-const Header = () => {
+const Headersobre = () => {
   return (
     <Flex bg="#000" w="100%" h="80px" color="#777" position="relative" as="h2" id="Header">
       <Flex align="center" gap="10" ml="5">
@@ -46,4 +43,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Headersobre;

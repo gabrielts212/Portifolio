@@ -44,7 +44,7 @@ const icons = [
 
 const Footer = () => {
   return (
-    <Flex w="100%" h="200" bg="#000" justify="center" align="center">
+    <Flex w="100%" h="180" bg="#000" justify="center" align="center">
       <Flex>
         <Flex gap={3.5} display={["flex", "flex", "flex", "flex", "flex"]}>
           {icons.map((icon, index) => {

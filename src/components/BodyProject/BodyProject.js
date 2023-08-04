@@ -14,6 +14,8 @@ const BodyProject = () => {
       justifyContent="center"
     >
       <Text
+       w="260px"
+       align="center"
         bg="rgba(0, 0, 0, 0.5)"
         color="white"
         fontSize="2.5rem"
