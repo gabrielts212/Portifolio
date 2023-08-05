@@ -22,7 +22,7 @@ const BodyProject = () => {
         fontFamily="Roboto"
         fontWeight="600"
       >
-        Meu Portifolio
+        Meu Portfólio
       </Text>
     </Box>
   );

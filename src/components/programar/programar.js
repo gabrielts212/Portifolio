@@ -40,9 +40,9 @@ import Image from "next/image";
 
 const newsList = [
   {
-    heading: "Meu Porfolio",
+    heading: "Meu Portfólio",
     content:
-      "Criamos um site/blog fictício, e nosso personagem é um fotógrafo. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Criei um site/blog fictício para amarzenar todos os meus projetos que estão em produção. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit. ",
   },
  
 ];
@@ -50,10 +50,10 @@ const newsList = [
 const programar= () => {
   return (
     <Flex w="100%" h="100%" color="#777" bg=" #131516">
-      <Flex flexDir="column" align="center" h="320px">
+      <Flex flexDir="column" align="center" h="340px">
         {newsList.map((news, index) => {
           return (
-            <Flex flexDir="column" {...news} key={index} w="80%" pb="50">
+            <Flex flexDir="column" {...news} key={index} w="90%" pb="50">
               <Flex flexDir="column" align="center" pb="5" pt="10">
                 <Heading
                  as="h2" id="Portifolio"
@@ -66,7 +66,6 @@ const programar= () => {
                 </Heading>
                 <Text
                   pt="2"
-                  // fontSize="16px"
                   fontFamily="Roboto"
                   fontWeight="400"
                 >

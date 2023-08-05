@@ -14,7 +14,7 @@ const headerTitles = [
     url: "/about",
   },
   {
-    title: "Portifolio",
+    title: "Portfólio",
     url: "/#Portifolio",
   },
 ];

@@ -21,19 +21,19 @@ import {
     {
       icon: Instagram,
       alt: "Instagram",
-      url: "/",
+     
     },
   
     {
       icon: Linkedin,
       alt: "Linkedin",
-      url: "/",
+      url: "https://www.linkedin.com/in/gabriel-nascimento-pereira/",
     },
   
     {
       icon: Facebook,
       alt: "Facebook",
-      url: "/",
+    
     },
     {
       icon: Seta,
@@ -50,9 +50,9 @@ import {
             {icons.map((icon, index) => {
               return (
                 <Text {...icon} key={index} cursor="pointer">
-                  <a href={icon.url} cursor="pointer">
+                  <Link href={icon.url} cursor="pointer"target="_blank" rel="noopener noreferrer">
                     <Image src={icon.icon} alt={icon.alt} />
-                  </a>
+                  </Link>
                 </Text>
               );
             })}

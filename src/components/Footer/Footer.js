@@ -27,7 +27,7 @@ const icons = [
   {
     icon: Linkedin,
     alt: "Linkedin",
-    url: "/",
+    url: "https://www.linkedin.com/in/gabriel-nascimento-pereira/",
   },
 
   {

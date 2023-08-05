@@ -3,7 +3,7 @@ import { Flex, Text, Heading, Box, Link, SimpleGrid } from "@chakra-ui/react";
 import Image from "next/image";
 import Projeto1 from "../assets/images/projeto1.png";
 import Projeto2 from "../assets/images/projeto2.png";
-import Projeto3 from "../assets/images/projeto3.png";
+import Projeto4 from "../assets/images/projeto4.png";
 
 const icons = [
   {
@@ -17,21 +17,20 @@ const icons = [
     url: "https://shoes-lyegkccbt-gabrielts212.vercel.app/",
   },
   {
-    icon: Projeto3,
+    icon: Projeto4,
     alt: "Instagram",
-    url: "https://lovt-doz1vxtow-gabrielts212.vercel.app/",
+    // url: "https://lovt-doz1vxtow-gabrielts212.vercel.app/",
   },
 ];
 
 const newsList = [
   {
-    heading: "Meu Porfolio",
-    content:
-      "Criamos um site/blog fictício, e nosso personagem é um fotógrafo. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    heading: "Meu Portfólio",
+    content:"Criei um site/blog fictício para amarzenar todos os meus projetos que estão em produção. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   },
   {
-    heading: "MEU TRABALHO",
-    content: "Aqui tem um dos meus últimos trabalhos.",
+    heading: "Meus Projetos",
+    content: "Aqui tem alguns projetos que estão no ar pela vercel.",
   },
 ];
 
