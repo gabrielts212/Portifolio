@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Flex,
-  Text,
-  Heading,
-  Box,
-Link,
-  SimpleGrid,
-
-} from "@chakra-ui/react";
+import { Flex, Text, Heading, Box, Link, SimpleGrid } from "@chakra-ui/react";
 import Image from "next/image";
 import Projeto1 from "../assets/images/projeto1.png";
 import Projeto2 from "../assets/images/projeto2.png";
@@ -52,7 +44,8 @@ const Body = () => {
             <Flex flexDir="column" {...news} key={index} w="80%" pb="50">
               <Flex flexDir="column" align="center" pb="5" pt="10">
                 <Heading
-                 as="h2" id="Portifolio"
+                  as="h2"
+                  id="Portifolio"
                   size="xs"
                   fontFamily="Roboto"
                   fontWeight="600"
@@ -60,12 +53,7 @@ const Body = () => {
                 >
                   {news.heading}
                 </Heading>
-                <Text
-                  pt="2"
-                  // fontSize="16px"
-                  fontFamily="Roboto"
-                  fontWeight="400"
-                >
+                <Text pt="2" fontFamily="Roboto" fontWeight="400">
                   {news.content}
                 </Text>
               </Flex>
@@ -82,7 +70,7 @@ const Body = () => {
           {icons.map((icon, index) => {
             return (
               <Box {...icon} key={index} cursor="pointer">
-                <Link href={icon.url}  target="_blank" rel="noopener noreferrer">
+                <Link href={icon.url} target="_blank" rel="noopener noreferrer">
                   <Image src={icon.icon} alt={icon.alt} />
                 </Link>
               </Box>
