@@ -1,16 +1,4 @@
-import {
-  Flex,
-  Text,
-  Heading,
-  Box,
-  List,
-  ListItem,
-  UnorderedList,
-  DrawerHeader,
-  SimpleGrid,
-  Divider,
-  Link,
-} from "@chakra-ui/react";
+import { Flex, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import Instagram from "../../components/assets/images/Instagram.png";
 import Linkedin from "../../components/assets/images/linkedin.png";
