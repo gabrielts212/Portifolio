@@ -48,12 +48,14 @@ const Body = () => {
                   id="Portifolio"
                   size="xs"
                   fontFamily="Roboto"
-                  fontWeight="600"
-                  fontSize="16px"
+                  // fontWeight="600"
+                  // fontSize="16px"
+                  fontWeight="800"
+                  fontSize="50px"
                 >
                   {news.heading}
                 </Heading>
-                <Text pt="2" fontFamily="Roboto" fontWeight="400">
+                <Text pt="2" fontFamily="Roboto"fontWeight="800"fontSize="20px">
                   {news.content}
                 </Text>
               </Flex>

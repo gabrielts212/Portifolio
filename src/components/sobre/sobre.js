@@ -10,7 +10,7 @@ import { Flex, Text, Box } from "@chakra-ui/react";
 const BodyProject = () => {
   return (
     <Box
-      backgroundImage="url('teste.jpg')"
+      // backgroundImage="url('teste.jpg')"
       backgroundSize="cover"
       backgroundPosition="center"
       backgroundRepeat="no-repeat"

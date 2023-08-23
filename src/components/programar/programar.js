@@ -1,6 +1,6 @@
 import React from "react";
 import { Flex, Text, Heading, Box, SimpleGrid } from "@chakra-ui/react";
-import Image from "next/image";
+// import Image from "next/image";
 
 const newsList = [
   {
@@ -12,31 +12,31 @@ const newsList = [
 
 const programar = () => {
   return (
-    <Flex w="100%" h="100%" color="#777" bg=" #131516">
-      <Flex flexDir="column" align="center" h="340px">
+    <Flex w="100%" h="80vh" color="#777" bg=" #131516"pt="10">
+      <Box flexDir="column" align="center" h="50%" justify="flex-end" >
         {newsList.map((news, index) => {
           return (
-            <Flex flexDir="column" {...news} key={index} w="90%" pb="50">
-              <Flex flexDir="column" align="center" pb="5" pt="10">
+            <Box flexDir="column" {...news} key={index} w="80%" pb="50"justify="flex-end">
+              <Flex flexDir="column"  >
                 <Heading
                   as="h2"
                   id="Portifolio"
                   size="xs"
                   fontFamily="Roboto"
-                  fontWeight="600"
-                  fontSize="16px"
+                  fontWeight="800"
+                  fontSize="50px"
                 >
                   {news.heading}
                 </Heading>
-                <Text pt="2" fontFamily="Roboto" fontWeight="400">
+                <Text pt="2" fontFamily="Roboto" fontWeight="800"fontSize="20px">
                   {news.content}
                 </Text>
               </Flex>
-            </Flex>
+            </Box>
           );
         })}
-      </Flex>
-    </Flex>
+      </Box>
+     </Flex>
   );
 };
 
