@@ -3,13 +3,13 @@ import { Flex, Text, Heading, Box, Link, SimpleGrid } from "@chakra-ui/react";
 import Image from "next/image";
 import Projeto1 from "../assets/images/projeto1.png";
 import Projeto2 from "../assets/images/projeto2.png";
-import Projeto4 from "../assets/images/projeto4.png";
+import Projeto3 from "../assets/images/projeto3.png";
 
 const icons = [
   {
     icon: Projeto1,
     alt: "Instagram",
-    url: "https://landing-page-indol-mu.vercel.app/",
+    url: "https://octopag-gabrielts212.vercel.app/",
   },
   {
     icon: Projeto2,
@@ -17,9 +17,9 @@ const icons = [
     url: "https://shoes-lyegkccbt-gabrielts212.vercel.app/",
   },
   {
-    icon: Projeto4,
+    icon: Projeto3,
     alt: "Instagram",
-    // url: "https://lovt-doz1vxtow-gabrielts212.vercel.app/",
+    url: "https://landing-page-indol-mu.vercel.app/",
   },
 ];
 
@@ -37,7 +37,7 @@ const newsList = [
 
 const Body = () => {
   return (
-    <Flex w="100%" h="100%" color="#777" bg=" #131516">
+    <Flex w="100%" h="100%" color="#777" bg=" white">
       <Flex flexDir="column" align="center" h="50%">
         {newsList.map((news, index) => {
           return (
@@ -46,16 +46,19 @@ const Body = () => {
                 <Heading
                   as="h2"
                   id="Portifolio"
-                  size="xs"
-                  fontFamily="Roboto"
-                  // fontWeight="600"
-                  // fontSize="16px"
-                  fontWeight="800"
-                  fontSize="50px"
+                  size="25"
+                  fontFamily="poppins"
+                  fontSize="2.3rem"
+                  fontWeight="600"
                 >
                   {news.heading}
                 </Heading>
-                <Text pt="2" fontFamily="Roboto"fontWeight="800"fontSize="20px">
+                <Text
+                  pt="2"
+                  fontFamily="poppins"
+                  fontWeight="600"
+                  fontSize="20px"
+                >
                   {news.content}
                 </Text>
               </Flex>
@@ -67,11 +70,20 @@ const Body = () => {
           columns={[1, 2, 3]}
           spacing="100px"
           justifyContent="space-around"
-          pb="20"
+          mb="40"
         >
           {icons.map((icon, index) => {
             return (
-              <Box {...icon} key={index} cursor="pointer">
+              <Box
+                {...icon}
+                key={index}
+                cursor="pointer"
+                _hover={{
+                  // Define as propriedades CSS que você deseja aplicar quando o mouse estiver sobre o botão
+                  transform: "scale(1.1)", // Aumenta o tamanho em 20%
+                  transition: "transform 0.1s", // Adiciona uma transição suave para a animação
+                }}
+              >
                 <Link href={icon.url} target="_blank" rel="noopener noreferrer">
                   <Image src={icon.icon} alt={icon.alt} />
                 </Link>
