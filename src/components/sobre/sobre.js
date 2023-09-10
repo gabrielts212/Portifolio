@@ -8,7 +8,7 @@ const BodyProject = () => {
       backgroundPosition="center"
       backgroundRepeat="no-repeat"
       w="100%"
-      h="700px"
+      h="600px"
       display="flex"
       alignItems="center"
       justifyContent="center"

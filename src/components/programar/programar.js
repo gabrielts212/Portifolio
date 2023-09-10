@@ -3,15 +3,15 @@ import { Flex, Text, Heading, Box, SimpleGrid } from "@chakra-ui/react";
 
 const newsList = [
   {
-    heading: "Meu Portfólio",
+    heading: "Sobre Mim",
     content:
-      "Criei um site/blog fictício para amarzenar todos os meus projetos que estão em produção. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit. ",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit. ",
   },
 ];
 
 const programar = () => {
   return (
-    <Flex w="100%" h="80%" color="#777" bg=" white ">
+    <Box w="100%" h="80%" color="#777" bg=" white ">
       <Box flexDir="column" align="center" h="50%">
         {newsList.map((news, index) => {
           return (
@@ -40,7 +40,7 @@ const programar = () => {
           );
         })}
       </Box>
-    </Flex>
+    </Box>
   );
 };
 
