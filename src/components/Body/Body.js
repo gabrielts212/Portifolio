@@ -8,17 +8,17 @@ import Projeto3 from "../assets/images/projeto3.png";
 const icons = [
   {
     icon: Projeto1,
-    alt: "Instagram",
-    url: "https://octopag-gabrielts212.vercel.app/",
+    alt: "weather",
+    url: "https://weather-two-henna.vercel.app/",
   },
   {
     icon: Projeto2,
-    alt: "Instagram",
+    alt: "Shoes",
     url: "https://shoes-lyegkccbt-gabrielts212.vercel.app/",
   },
   {
     icon: Projeto3,
-    alt: "Instagram",
+    alt: "Landing Page",
     url: "https://landing-page-indol-mu.vercel.app/",
   },
 ];
