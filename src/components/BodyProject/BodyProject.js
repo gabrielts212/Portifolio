@@ -4,14 +4,6 @@ import { Flex, Text, Box } from "@chakra-ui/react";
 const BodyProject = () => {
   return (
 
-
-
-
-
-
-
-
-    
     <Box
       w="100%"
       h="700px"
