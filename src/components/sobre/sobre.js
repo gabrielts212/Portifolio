@@ -3,16 +3,6 @@ import { Flex, Text, Box } from "@chakra-ui/react";
 
 const BodyProject = () => {
   return (
-
-
-
-
-
-
-
-
-
-    
     <Box
       w="100%"
       h="600px"
@@ -39,7 +29,7 @@ const BodyProject = () => {
         <source src="video2.mp4" type="video/mp4" />
       </video>
       <Text
-       w="200px"
+        w="200px"
         align="center"
         bg="rgba(0, 0, 0, 0.5)"
         color="white"
@@ -48,7 +38,7 @@ const BodyProject = () => {
         fontWeight="600"
         zIndex="1"
       >
-       Sobre
+        Sobre
       </Text>
     </Box>
   );
