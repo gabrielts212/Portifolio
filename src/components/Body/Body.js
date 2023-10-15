@@ -4,23 +4,35 @@ import Image from "next/image";
 import Projeto1 from "../assets/images/projeto1.png";
 import Projeto2 from "../assets/images/projeto2.png";
 import Projeto3 from "../assets/images/projeto3.png";
+import Projeto4 from "../assets/images/projeto4.png";
 
 const icons = [
   {
     icon: Projeto1,
-    alt: "weather",
-    url: "https://weather-two-henna.vercel.app/",
+    alt: "UserPortal",
+    url: "https://user-portal-rho.vercel.app/",
+    text: "UserPortal",
   },
   {
     icon: Projeto2,
-    alt: "Shoes",
-    url: "https://shoes-lyegkccbt-gabrielts212.vercel.app/",
+    alt: "weather",
+    url: "https://weather-two-henna.vercel.app/",
+    text: "Weather App",
   },
   {
     icon: Projeto3,
     alt: "Landing Page",
     url: "https://landing-page-indol-mu.vercel.app/",
+    text: "Landing Page",
   },
+
+  {
+    icon: Projeto4,
+    alt: "Shoes",
+    url: "https://shoes-lyegkccbt-gabrielts212.vercel.app/",
+    text: "Shoe Store",
+  },
+ 
 ];
 
 const newsList = [
@@ -76,17 +88,19 @@ const Body = () => {
           {icons.map((icon, index) => {
             return (
               <Center key={index}>
-                <Box
-                  {...icon}
-                  cursor="pointer"
-                  _hover={{
-                    transform: "scale(1.1)",
-                    transition: "transform 0.1s",
-                  }}
-                >
+                <Box cursor="pointer" _hover={{ transform: "scale(1.1)", transition: "transform 0.1s" }} p="5">
                   <Link href={icon.url} target="_blank" rel="noopener noreferrer">
                     <Image src={icon.icon} alt={icon.alt} />
                   </Link>
+                  <Text
+                    pt="2"
+                    fontFamily="poppins"
+                    fontWeight="600"
+                    fontSize="20px"
+                    textAlign="center"
+                  >
+                    {icon.text} 
+                  </Text>
                 </Box>
               </Center>
             );
