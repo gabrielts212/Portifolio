@@ -5,7 +5,7 @@ const newsList = [
   {
     heading: "Sobre Mim",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit. ",
+      "Olá! Meu nome é Gabriel, e sou desenvolvedor  front-end. Sou formado em Análise e Desenvolvimento de Sistemas (ADS) e tenho um ano de experiência trabalhando com desenvolvimento web. Minha jornada no mundo do desenvolvimento começou com a descoberta do JavaScript, a linguagem que me permitiu dar vida às minhas ideias criativas na web. Rapidamente me aprofundei em frameworks como React, que me impressionou com sua capacidade de criar interfaces de usuário dinâmicas e interativas. Depois de dominar o React, embarquei na jornada de aprendizado do Next.js, uma estrutura que me permitiu construir aplicativos web de alto desempenho de forma eficiente. A possibilidade de renderização no lado do servidor e uma experiência de desenvolvimento otimizada. Com a estética e a facilidade de uso em mente, mergulhei de cabeça no Chakra UI. Adorei como ele simplifica o processo de criação de interfaces atraentes e responsivas, economizando tempo e permitindo que eu me concentre no que realmente importa a funcionalidade do aplicativo. "
   },
 ];
 

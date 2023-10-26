@@ -3,7 +3,7 @@ import { Flex, Text, Box } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Logo from "./../../../public/favicon.ico";
-
+import CustomLink from "../link/link";
 const headerTitles = [
   {
     title: "Home",
@@ -19,7 +19,7 @@ const headerTitles = [
   },
 ];
 
-const Header = () => {
+const Header = ({ title }) => {
   return (
     <Flex
       bg="#070b21"
@@ -34,22 +34,20 @@ const Header = () => {
       paddingX={["2", "5"]}
     >
       <Flex align="center">
-        <Box cursor="pointer" marginRight={["1rem", "2rem"]}   >
-          <motion.div whileHover={{ scale: 1.2, rotate: 360, opacity: 0.7 }}  >
-            <Image
-              src={Logo}
-              alt="Logo"
-              width={50}
-              height={50}
-              cursor="pointer"
-             
-            />
-          </motion.div>
-        </Box>
-        <Flex
-          align="center"
-          display={["none", "flex"]}
-        >
+        <CustomLink to="/">
+          <Box cursor="pointer" marginRight={["1rem", "2rem"]}>
+            <motion.div whileHover={{ scale: 1.2, rotate: 360, opacity: 0.7 }}>
+              <Image
+                src={Logo}
+                alt="Logo"
+                width={50}
+                height={50}
+                cursor="pointer"
+              />
+            </motion.div>
+          </Box>
+        </CustomLink>
+        <Flex align="center" display={["none", "flex"]}>
           {headerTitles.map((title, index) => (
             <Text
               key={index}

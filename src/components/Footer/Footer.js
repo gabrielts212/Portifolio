@@ -1,3 +1,4 @@
+import React from "react";
 import { Flex, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import Instagram from "../../components/assets/images/Instagram.png";
@@ -11,13 +12,11 @@ const icons = [
     alt: "Instagram",
     url: "/",
   },
-
   {
     icon: Linkedin,
     alt: "Linkedin",
     url: "https://www.linkedin.com/in/gabriel-nascimento-pereira/",
   },
-
   {
     icon: Facebook,
     alt: "Facebook",
@@ -26,30 +25,36 @@ const icons = [
   {
     icon: Seta,
     alt: "Link Topo",
-    url: "/#Header",
+
+    scrollToTop: () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    },
   },
 ];
 
 const Footer = () => {
   return (
-    <Flex w="100%" h="180" bg="#070b21" justify="center" align="center">
+    <Flex w="100%" h="120" bg="#070b21" justify="center" align="center">
       <Flex>
         <Flex gap={3.5} display={["flex", "flex", "flex", "flex", "flex"]}>
           {icons.map((icon, index) => {
             return (
               <Text
-                {...icon}
                 key={index}
                 cursor="pointer"
                 _hover={{
-                  // Define as propriedades CSS que você deseja aplicar quando o mouse estiver sobre o botão
-                  transform: "scale(1.4)", // Aumenta o tamanho em 20%
-                  transition: "transform 0.1s", // Adiciona uma transição suave para a animação
+                  transform: "scale(1.4)",
+                  transition: "transform 0.1s",
                 }}
+                onClick={icon.scrollToTop ? icon.scrollToTop : null}
               >
-                <a href={icon.url} cursor="pointer">
+                {icon.url ? (
+                  <a href={icon.url} cursor="pointer">
+                    <Image src={icon.icon} alt={icon.alt} />
+                  </a>
+                ) : (
                   <Image src={icon.icon} alt={icon.alt} />
-                </a>
+                )}
               </Text>
             );
           })}
